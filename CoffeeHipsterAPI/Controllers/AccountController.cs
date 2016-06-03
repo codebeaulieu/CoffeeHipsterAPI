@@ -19,7 +19,7 @@ using CoffeeHipsterAPI.Results;
 using CoffeeHipster.Models;
 using CoffeeHipster.Data;
 
-namespace CoffeeHipsterAPI.Controllers
+namespace CoffeeHipsterAPI.ControllersB
 {
     [Authorize]
     [RoutePrefix("api/Account")]

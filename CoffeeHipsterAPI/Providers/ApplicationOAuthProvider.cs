@@ -11,6 +11,7 @@ using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.OAuth;
 using CoffeeHipsterAPI.Models;
 using CoffeeHipster.Data;
+using CoffeeHipster.Models;
 
 namespace CoffeeHipsterAPI.Providers
 {

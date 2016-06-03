@@ -14,15 +14,16 @@ namespace CoffeeHipster.Models
     */
     public class Coffee : IEntity
     {
-        [Key]
+        [Key, Required, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
         [Required]
         public string Name { get; set; }
+        [Required]
         public string Type { get; set; }
         public string Roast { get; set; }
         public string Color { get; set; }
         [Range(0.00, 100.00, ErrorMessage = "Range must be between 0.00 and 100.00")]
-        public decimal OilAmmount { get; set; }
+        public decimal OilAmount { get; set; }
         public bool FairTrade { get; set; }
         public string History { get; set; } 
         public string ImageBagURL { get; set; } 
@@ -30,16 +31,13 @@ namespace CoffeeHipster.Models
         public string CountryOfOrigin { get; set; }
         public string DateOfOrigin { get; set; }
         public double EstimatedPrice { get; set; }
-        public string InsertedBy { get; set; }
+        [Required]
+        public int InsertedBy { get; set; }
         [Required, DatabaseGenerated(DatabaseGeneratedOption.Computed)]
         public DateTime InsertedDate { get; set; }
         public int RatingUpVotes { get; set; }
         public int RatingDownVotes { get; set; }
-
         [NotMapped]
-        public int Rating
-        {
-            get { return RatingUpVotes - RatingDownVotes; } 
-        }
+        public int Rating => RatingUpVotes - RatingDownVotes;
     }
 }

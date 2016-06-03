@@ -9,7 +9,7 @@ using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CoffeeHipster.Data
+namespace CoffeeHipster.Models
 {
     // You can add profile data for the user by adding more properties to your ApplicationUser class, please visit http://go.microsoft.com/fwlink/?LinkID=317594 to learn more.
     public class ApplicationUser : IdentityUser
@@ -40,8 +40,8 @@ namespace CoffeeHipster.Data
         //    Entry(user).State = EntityState.Modified;
         //}
 
-        public DbSet<Coffee> Members { get; set; }
- 
-
+        public DbSet<Coffee> Coffees { get; set; }
+        public DbSet<User> AppUsers { get; set; }
+        public DbSet<Admin> Admins { get; set; } 
     }
 }
