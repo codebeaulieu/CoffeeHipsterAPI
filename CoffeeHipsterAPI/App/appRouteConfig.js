@@ -10,9 +10,21 @@ angular.module('app').config(['$routeProvider', function ($routeProvider) {
             }
         },
         {
+            url: '/create',
+            config: {
+                template: '<ch-create></ch-create>'
+            }
+        },
+        {
             url: '/content',
             config: {
                 template: '<ch-content></ch-content>'
+            }
+        },
+        {
+            url: '/messages',
+            config: {
+                template: '<ch-messages></ch-messages>'
             }
         }
     ];

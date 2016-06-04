@@ -1,12 +1,12 @@
 ﻿"use strict";
 
-angular.module("chContent").controller("chContentController",
+angular.module("chCreate").controller("chCreateController",
     ['$scope',
         function ($scope) {
 
             var init = function () {
 
-                console.log("chConenet loads");
+                console.log("chCreate loads");
             };
 
 
