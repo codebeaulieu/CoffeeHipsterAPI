@@ -6,7 +6,7 @@ angular.module('chCreate').directive('chCreate',
 
             return {
                 controller: "chCreateController",
-                templateUrl: 'App/Create/chCreateTemplate.html', 
+                templateUrl: 'App/Framework/Create/chCreateTemplate.html', 
                 link: function (scope, element, attrs) { 
                      console.log("chCreateDirective"); 
                 }

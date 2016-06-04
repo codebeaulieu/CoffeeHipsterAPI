@@ -6,7 +6,7 @@ angular.module('chContent').directive('chContent',
 
             return {
                 controller: "chContentController",
-                templateUrl: 'App/Content/chContentTemplate.html', 
+                templateUrl: 'App/Framework/Content/chContentTemplate.html', 
                 link: function (scope, element, attrs) { 
                      console.log("chContentDirective"); 
                 }

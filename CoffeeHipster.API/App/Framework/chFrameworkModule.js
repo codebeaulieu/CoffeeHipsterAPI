@@ -1,3 +1,3 @@
 ﻿"use strict";
 
-angular.module("chFramework", ["chMenu","chDashboard", "chContent", "chCreate"]);
+angular.module("chFramework", ["chMenu","chDashboard", "chContent", "chCreate", "chMessages"]);

@@ -6,7 +6,7 @@ angular.module('chDashboard').directive('chDashboard',
 
             return {
                 controller: "chDashboardController",
-                templateUrl: 'App/Dashboard/chDashboardTemplate.html', 
+                templateUrl: 'App/Framework/Dashboard/chDashboardTemplate.html', 
                 link: function (scope, element, attrs) {
 
                      console.log("chDashboardDirective");

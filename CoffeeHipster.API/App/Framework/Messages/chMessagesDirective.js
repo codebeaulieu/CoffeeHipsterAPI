@@ -6,7 +6,7 @@ angular.module('chMessages').directive('chMessages',
 
             return {
                 controller: "chMessagesController",
-                templateUrl: 'App/Messages/chMessagesTemplate.html', 
+                templateUrl: 'App/Framework/Messages/chMessagesTemplate.html', 
                 link: function (scope, element, attrs) { 
                      console.log("chMessagesDirective"); 
                 }

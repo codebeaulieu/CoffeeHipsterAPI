@@ -8,7 +8,7 @@ function ($timeout, $localStorage) {
 
         },
         transclude: true,
-        templateUrl: 'App/Menu/chMenuTemplate.html',
+        templateUrl: 'App/Framework/Menu/chMenuTemplate.html',
         controller: 'chMenuController',
         link: function (scope, el, attr, ctrl) {
 

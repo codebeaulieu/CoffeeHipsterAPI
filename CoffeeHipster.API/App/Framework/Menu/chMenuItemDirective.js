@@ -8,7 +8,7 @@ angular.module('chMenu').directive('chMenuItem', function () {
             icon: '@',
             route: '@'
         },
-        templateUrl: 'App/Menu/chMenuItemTemplate.html',
+        templateUrl: 'App/Framework/Menu/chMenuItemTemplate.html',
         link: function (scope, el, attr, ctrl) {
             scope.isActive = function () {
                 return el === ctrl.getActiveElement();
