@@ -1,2 +1,36 @@
 ﻿body {
+    color:#222;
+    overflow-x:hidden;
+}
+#giant-square-color { 
+    font-size:75px;
+    color:white;
+    height:150px!important;
+    width:150px;
+
+}
+.color-item { 
+    width:30px;
+    height:30px;
+    color:white;
+    margin:5px;
+}
+.ch-view {
+    display:inline-block;
+    position:absolute;
+    top:0px;
+    left: 70px;
+    padding: 10px 20px 10px 20px;
+    width: calc(100% - 70px);
+    background-color: #C4C4C4;
+    min-height: 100vh;
+    overflow: hidden;
+    transition: ease-out all 0.5s;
+}
+
+ 
+
+
+@media screen and (min-width: 768px) {
+    
 }

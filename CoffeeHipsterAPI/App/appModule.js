@@ -1,8 +1,5 @@
 ﻿"use strict";
 
-angular.module('app', []).controller('Ctrl', function ($scope) {
-
-    console.log("loading app");
-});
-
-//"ngStorage", "once", "ngMaterial", "ngMdIcons", "angularMoment""chFramework", "ngResource"
+angular.module("app", ["ngRoute", "chFramework", "ngMaterial", "angularMoment", "ngResource", "once", "ngStorage"])
+    .controller('Controller', function ($scope) { });
+ 

@@ -4,10 +4,7 @@ angular.module("chFramework").directive("chFramework", function () {
 
     return {
         transclude: true,
-        scope: {
-            /*title: '@',
-            subtitle: '@',
-            iconFile: '@'*/
+        scope: { 
         },
         controller: "chFrameworkController",
         templateUrl: "App/Framework/chFrameworkTemplate.html",

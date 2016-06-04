@@ -1,12 +1,18 @@
 ﻿"use strict";
 
 angular.module('app').config(['$routeProvider', function ($routeProvider) {
-
+    console.log("route provider loads");
     var routes = [
         {
             url: '/dashboard',
             config: {
                 template: '<ch-dashboard></ch-dashboard>'
+            }
+        },
+        {
+            url: '/content',
+            config: {
+                template: '<ch-content></ch-content>'
             }
         }
     ];

@@ -25,7 +25,7 @@ namespace CoffeeHipster.Data
         public void Insert(T entity)
         {
 
-            var validated = x.ExecuteFaultHandledOperation(() =>
+            x.ExecuteFaultHandledOperation(() =>
             {
                 return DbSet.Add(entity);
             });
