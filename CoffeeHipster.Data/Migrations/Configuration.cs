@@ -2,11 +2,11 @@ namespace CoffeeHipster.Data.Migrations
 {
     using Microsoft.AspNet.Identity;
     using Microsoft.AspNet.Identity.EntityFramework;
+    using Models;
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
     using System.Linq;
-    using CoffeeHipster.Models;
 
     internal sealed class Configuration : DbMigrationsConfiguration<CoffeeHipster.Models.ApplicationDbContext>
     {
@@ -17,19 +17,8 @@ namespace CoffeeHipster.Data.Migrations
 
         protected override void Seed(CoffeeHipster.Models.ApplicationDbContext context)
         {
-            //  This method will be called after migrating to the latest version.
-
-            //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
-            //  to avoid creating duplicate seed data. E.g.
-            //
-            //    context.People.AddOrUpdate(
-            //      p => p.FullName,
-            //      new Person { FullName = "Andrew Peters" },
-            //      new Person { FullName = "Brice Lambson" },
-            //      new Person { FullName = "Rowan Miller" }
-            //    );
-            //
             /**
+            // makes an admin role if one doesn't exist
             if (!context.Roles.Any(r => r.Name == "Admin"))
             {
                 var store = new RoleStore<IdentityRole>(context);
@@ -39,22 +28,32 @@ namespace CoffeeHipster.Data.Migrations
 
                 manager.Create(role);
             }
+
+            if (!context.Roles.Any(r => r.Name == "User"))
+            {
+                var store = new RoleStore<IdentityRole>(context);
+                var manager = new RoleManager<IdentityRole>(store);
+                var role = new IdentityRole { Name = "User" };
+
+
+                manager.Create(role);
+            }
             // if user doesn't exist, create one and add it to the admin role
             if (!context.Users.Any(u => u.UserName == "admin"))
             {
                 var store = new UserStore<ApplicationUser>(context);
                 var manager = new UserManager<ApplicationUser>(store);
-                var user = new Admin {
+                var user = new Admin
+                {
                     UserName = "danbeaulieu",
-                    Email = "danbeaulieu@gmail.com",
+                    Email = "",
                     HipsterPoints = 10000,
-                    Level = 0
+                    Level = 0,
                 };
 
                 manager.Create(user, "dont-hack-me");
                 manager.AddToRole(user.Id, "Admin");
             } /**/
-
         }
     }
 }

@@ -1,11 +1,52 @@
 ﻿<!DOCTYPE html>
-<html>
+<html ng-app="app">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    <link href="~/Content/angular-material.min.css" rel="stylesheet" />
+    <link href="~/Content/angular-material.layouts.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="~/Content/angular-toastr.css" rel="stylesheet" />
+    <link href="~/Content/toastr.css" rel="stylesheet" />
+    <link href="~/App/Dashboard/chDashboard.css" rel="stylesheet" />
+    <link href="~/App/Framework/chFramework.css" rel="stylesheet" />
+
+    <script src="~/Scripts/tinymce/tinymce.min.js"></script> 
+    <script src="~/Scripts/toastr.js"></script>
+   
+    <script src="~/Scripts/angular.min.js"></script>
+    <script src="~/Scripts/angular-animate.min.js"></script>
+    <script src="~/Scripts/angular-aria/angular-aria.min.js"></script>
+    <script src="~/Scripts/angular-messages.min.js"></script>
+    <script src="~/Scripts/angular-route.min.js"></script>
+    <script src="~/Scripts/angular-resource.min.js"></script> 
+    
+    <script src="~/Scripts/moment.js"></script>
+    <script src="~/Scripts/angular-moment.min.js"></script>
+    <script src="~/Scripts/angular-mocks.js"></script>
+    <script src="~/Scripts/ngStorage.js"></script>
+    <script src="~/Scripts/once.js"></script>
+    <script src="~/Scripts/respond.min.js"></script>
+    <script src="~/Scripts/angular-sanitize.js"></script>
+    
+    
+    <script src="~/Scripts/angular-material/angular-material.min.js"></script>
+    <script src="~/Scripts/angular-material/angular-material-mocks.js"></script>
+    
+    <script src="~/App/Dashboard/chDashboardModule.js"></script>
+    <script src="~/App/Dashboard/chDashboardController.js"></script>
+    <script src="~/App/Dashboard/chDashboardDirective.js"></script>
+    <script src="~/App/Framework/chFrameworkModule.js"></script>
+    <script src="~/App/Framework/chFrameworkController.js"></script>
+    <script src="~/App/Framework/chFrameworkDirective.js"></script> 
+    <script src="~/App/appModule.js"></script>
+    <script src="~/App/appConfig.js"></script> 
+    <script src="~/App/appRouteConfig.js"></script>
+
+
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">

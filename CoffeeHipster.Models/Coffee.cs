@@ -31,6 +31,7 @@ namespace CoffeeHipster.Models
         public string CountryOfOrigin { get; set; }
         public string DateOfOrigin { get; set; }
         public double EstimatedPrice { get; set; }
+        
         [Required]
         public int InsertedBy { get; set; }
         [Required, DatabaseGenerated(DatabaseGeneratedOption.Computed)]
@@ -39,5 +40,6 @@ namespace CoffeeHipster.Models
         public int RatingDownVotes { get; set; }
         [NotMapped]
         public int Rating => RatingUpVotes - RatingDownVotes;
+        public bool Accepted { get; set; } = false;
     }
 }

@@ -57,13 +57,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Migrations\201606032340025_Initial.cs" />
-    <Compile Include="Migrations\201606032340025_Initial.Designer.cs">
-      <DependentUpon>201606032340025_Initial.cs</DependentUpon>
+    <Compile Include="Migrations\201606040039587_Initialize.cs" />
+    <Compile Include="Migrations\201606040039587_Initialize.Designer.cs">
+      <DependentUpon>201606040039587_Initialize.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Repository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UnitOfWork.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CoffeeHipster.Common\CoffeeHipster.Common.csproj">
@@ -84,8 +85,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201606032340025_Initial.resx">
-      <DependentUpon>201606032340025_Initial.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201606040039587_Initialize.resx">
+      <DependentUpon>201606040039587_Initialize.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
