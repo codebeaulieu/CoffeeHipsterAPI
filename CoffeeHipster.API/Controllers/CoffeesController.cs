@@ -10,6 +10,8 @@ using System.Web.Http;
 using System.Web.Http.Description;
 using CoffeeHipster.Models;
 using CoffeeHipster.Data;
+using Microsoft.AspNet.Identity;
+ 
 
 namespace CoffeeHipster.API.Controllers
 {
@@ -84,6 +86,9 @@ namespace CoffeeHipster.API.Controllers
         [ResponseType(typeof(Coffee))]
         public IHttpActionResult PostCoffee(Coffee coffee)
         {
+
+        
+
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);

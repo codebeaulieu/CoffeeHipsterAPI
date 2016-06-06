@@ -1,12 +1,14 @@
 ﻿"use strict";
 
 angular.module("chContent").controller("chContentController",
-    ['$scope',
-        function ($scope) {
+    ['$scope', "contentCRUDService",
+        function ($scope, contentCRUDService) {
 
             var init = function () {
 
-                console.log("chConenet loads");
+                //contentCRUDService.get().then(function (obj) {
+                //    console.log("obj : ", obj);
+                //});
             };
 
 

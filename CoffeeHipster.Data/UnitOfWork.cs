@@ -48,6 +48,20 @@ namespace CoffeeHipster.Data
             private set { _coffeeRepository = value; }
         }
 
+        private IRepository<Admin> _adminRepository;
+        public IRepository<Admin> AdminRepository
+        {
+            get
+            {
+                if (_adminRepository == null)
+                {
+                    _adminRepository = new Repository<Admin>(_context);
+                }
+                return _adminRepository;
+            }
+            private set { _adminRepository = value; }
+        }
+
         public void Dispose()
         {
 

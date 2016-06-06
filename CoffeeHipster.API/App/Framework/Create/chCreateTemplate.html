@@ -1,1 +1,62 @@
-﻿<div>CREATE CONTENT</div>
+﻿<md-container ng-controller="chCreateController as vm">
+    <div layout="column">
+    
+        <div layout="row"> 
+            <md-input-container>
+                <label>Name</label>
+                <input ng-model="vm.coffee.Name">
+            </md-input-container>
+            <md-input-container>
+                <label>Type</label>
+                <input ng-model="vm.coffee.Type">
+            </md-input-container>
+        </div>
+        <div layout="row">
+            <md-input-container>
+                <label>Roast</label>
+                <input ng-model="vm.coffee.Roast">
+            </md-input-container>
+            <md-input-container>
+                <label>Color</label>
+                <input ng-model="vm.coffee.Color">
+            </md-input-container>
+            <md-input-container>
+                <label>Oil Amount</label>
+                <input ng-model="vm.coffee.OilAmount">
+            </md-input-container>
+          
+               
+        
+        </div>
+       
+         
+        <div layout="column">
+            <md-input-container>
+                <label>Description</label>
+                <textarea ng-model="vm.coffee.History"></textarea>
+            </md-input-container>
+            <div layout="row">
+                <md-datepicker ng-model="vm.coffee.DateOfOrigin" md-placeholder="Date of Origin"></md-datepicker>
+                <md-checkbox ng-model="vm.coffeee.FairTrade" aria-label="Fair Trade">
+                    Fair Trade: {{vm.coffeee.FairTrade}}
+                </md-checkbox>
+            </div>
+            <md-input-container>
+                <label>Image Bag</label>
+                <input ng-model="vm.coffee.ImageBagURL">
+            </md-input-container>
+            <md-input-container>
+                <label>Image Bean</label>
+                <input ng-model="vm.coffee.ImageBeanURL">
+            </md-input-container>
+            <md-input-container>
+                <label>Esimated Price</label>
+                <input ng-model="vm.coffee.EstimatedPrice">
+            </md-input-container>
+        </div>
+       <md-button class="md-primary md-raised" ng-click="vm.handleSubmitButtonClicked()">Submit</md-button>
+    </div>
+
+</md-container>
+
+ 

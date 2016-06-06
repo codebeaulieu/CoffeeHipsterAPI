@@ -8,7 +8,7 @@ angular.module('chCreate').factory('createCRUDService',
             return $http({
                 method: 'GET',
                 datatype: 'json',
-                url: 'api/***',
+                url: 'api/****',
                 contentType: "application/json; charset=utf-8",
                 cache: false,
             }).success(function (data, status, headers, config) {
@@ -42,7 +42,7 @@ angular.module('chCreate').factory('createCRUDService',
                 method: 'POST',                                                                               
                 dataType: 'json',
                 data: JSON.stringify(object),
-                url: 'api/***/',
+                url: 'api/Coffees',
             }).success(function (data, status, headers, config) { 
                 if (status == '200') {
                     toastr.success("Object has been successfully saved.", "Success", { timeOut: 800 });
