@@ -8,11 +8,11 @@ using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.Google;
 using Microsoft.Owin.Security.OAuth;
 using Owin;
-using CoffeeHipsterAPI.Providers;
+using CoffeeHipster.API.Providers;
 using CoffeeHipster.Models;
 using CoffeeHipster.Data;
 
-namespace CoffeeHipsterAPI
+namespace CoffeeHipster.API
 {
     public partial class Startup
     {

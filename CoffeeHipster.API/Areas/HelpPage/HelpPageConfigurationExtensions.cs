@@ -11,10 +11,10 @@ using System.Net.Http.Headers;
 using System.Web.Http;
 using System.Web.Http.Controllers;
 using System.Web.Http.Description;
-using CoffeeHipsterAPI.Areas.HelpPage.ModelDescriptions;
-using CoffeeHipsterAPI.Areas.HelpPage.Models;
+using CoffeeHipster.API.Areas.HelpPage.ModelDescriptions;
+using CoffeeHipster.API.Areas.HelpPage.Models;
 
-namespace CoffeeHipsterAPI.Areas.HelpPage
+namespace CoffeeHipster.API.Areas.HelpPage
 {
     public static class HelpPageConfigurationExtensions
     {

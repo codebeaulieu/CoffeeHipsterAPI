@@ -9,11 +9,11 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.OAuth;
-using CoffeeHipsterAPI.Models;
+using CoffeeHipster.API.Models;
 using CoffeeHipster.Data;
 using CoffeeHipster.Models;
 
-namespace CoffeeHipsterAPI.Providers
+namespace CoffeeHipster.API.Providers
 {
     public class ApplicationOAuthProvider : OAuthAuthorizationServerProvider
     {

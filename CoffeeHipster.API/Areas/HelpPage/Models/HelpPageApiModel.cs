@@ -2,9 +2,9 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Net.Http.Headers;
 using System.Web.Http.Description;
-using CoffeeHipsterAPI.Areas.HelpPage.ModelDescriptions;
+using CoffeeHipster.API.Areas.HelpPage.ModelDescriptions;
 
-namespace CoffeeHipsterAPI.Areas.HelpPage.Models
+namespace CoffeeHipster.API.Areas.HelpPage.Models
 {
     /// <summary>
     /// The model that represents an API displayed on the help page.

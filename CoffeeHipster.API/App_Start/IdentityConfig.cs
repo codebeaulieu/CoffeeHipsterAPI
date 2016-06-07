@@ -5,8 +5,10 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
 using CoffeeHipster.Models;
 using CoffeeHipster.Data;
+using Microsoft.Owin.Security;
+using System.Security.Claims;
 
-namespace CoffeeHipsterAPI
+namespace CoffeeHipster.API
 {
     // Configure the application user manager used in this application. UserManager is defined in ASP.NET Identity and is used by the application.
 
@@ -43,4 +45,6 @@ namespace CoffeeHipsterAPI
             return manager;
         }
     }
+
+   
 }

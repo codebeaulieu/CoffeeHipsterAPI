@@ -1,6 +1,6 @@
 using System;
 
-namespace CoffeeHipsterAPI.Areas.HelpPage.ModelDescriptions
+namespace CoffeeHipster.API.Areas.HelpPage.ModelDescriptions
 {
     /// <summary>
     /// Describes a type model.

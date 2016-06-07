@@ -5,9 +5,9 @@ using System.Reflection;
 using System.Web.Http.Controllers;
 using System.Web.Http.Description;
 using System.Xml.XPath;
-using CoffeeHipsterAPI.Areas.HelpPage.ModelDescriptions;
+using CoffeeHipster.API.Areas.HelpPage.ModelDescriptions;
 
-namespace CoffeeHipsterAPI.Areas.HelpPage
+namespace CoffeeHipster.API.Areas.HelpPage
 {
     /// <summary>
     /// A custom <see cref="IDocumentationProvider"/> that reads the API documentation from an XML documentation file.

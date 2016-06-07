@@ -1,0 +1,22 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="login-view"  layout="column" layout-align="center center" ng-controller="chLoginController as vm">
+ 
+    <div class="login-box md-whiteframe-3dp" layout="column" layout-align="center center">
+        <div class="md-subhead">Sorry, you'll need to login</div>
+        <md-input-container>
+            <label>User name</label>
+            <input ng-model="vm.user.userName">
+        </md-input-container>
+        <md-input-container>
+            <label>Password</label>
+            <input ng-model="v.user.password">
+        </md-input-container>
+        <md-button ng-click="vm.handleLoginButtonClicked()">
+            Login
+        </md-button>
+    </div>
+</div>
+ 

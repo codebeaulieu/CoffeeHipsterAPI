@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 
-namespace CoffeeHipsterAPI.Areas.HelpPage.ModelDescriptions
+namespace CoffeeHipster.API.Areas.HelpPage.ModelDescriptions
 {
     public class ParameterDescription
     {

@@ -7,7 +7,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Web.Http;
 
-namespace CoffeeHipsterAPI.Results
+namespace CoffeeHipster.API.Results
 {
     public class ChallengeResult : IHttpActionResult
     {

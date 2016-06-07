@@ -3,7 +3,7 @@ using System.Globalization;
 using System.Linq;
 using System.Reflection;
 
-namespace CoffeeHipsterAPI.Areas.HelpPage.ModelDescriptions
+namespace CoffeeHipster.API.Areas.HelpPage.ModelDescriptions
 {
     internal static class ModelNameHelper
     {

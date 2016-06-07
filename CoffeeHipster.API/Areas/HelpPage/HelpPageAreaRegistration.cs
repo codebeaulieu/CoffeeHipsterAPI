@@ -1,7 +1,7 @@
 using System.Web.Http;
 using System.Web.Mvc;
 
-namespace CoffeeHipsterAPI.Areas.HelpPage
+namespace CoffeeHipster.API.Areas.HelpPage
 {
     public class HelpPageAreaRegistration : AreaRegistration
     {

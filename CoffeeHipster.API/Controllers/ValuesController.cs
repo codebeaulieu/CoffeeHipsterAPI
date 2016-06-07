@@ -5,7 +5,7 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 
-namespace CoffeeHipsterAPI.Controllers
+namespace CoffeeHipster.API.Controllers
 {
     [Authorize]
     public class ValuesController : ApiController

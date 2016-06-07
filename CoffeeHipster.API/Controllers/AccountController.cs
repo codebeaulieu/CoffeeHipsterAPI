@@ -13,13 +13,14 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.OAuth;
-using CoffeeHipsterAPI.Models;
-using CoffeeHipsterAPI.Providers;
-using CoffeeHipsterAPI.Results;
+using CoffeeHipster.API.Models;
+using CoffeeHipster.API.Providers;
+using CoffeeHipster.API.Results;
 using CoffeeHipster.Models;
 using CoffeeHipster.Data;
+using CoffeeHipster.API.Providers;
 
-namespace CoffeeHipsterAPI.ControllersB
+namespace CoffeeHipster.API.ControllersB
 {
     [Authorize]
     [RoutePrefix("api/Account")]

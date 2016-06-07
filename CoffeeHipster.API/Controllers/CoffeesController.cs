@@ -15,6 +15,7 @@ using Microsoft.AspNet.Identity;
 
 namespace CoffeeHipster.API.Controllers
 {
+    [Authorize]
     public class CoffeesController : ApiController
     {
         private ApplicationDbContext db = new ApplicationDbContext();

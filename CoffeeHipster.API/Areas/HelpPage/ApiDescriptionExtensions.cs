@@ -3,7 +3,7 @@ using System.Text;
 using System.Web;
 using System.Web.Http.Description;
 
-namespace CoffeeHipsterAPI.Areas.HelpPage
+namespace CoffeeHipster.API.Areas.HelpPage
 {
     public static class ApiDescriptionExtensions
     {

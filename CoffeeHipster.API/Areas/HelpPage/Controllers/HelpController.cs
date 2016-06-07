@@ -1,10 +1,10 @@
 using System;
 using System.Web.Http;
 using System.Web.Mvc;
-using CoffeeHipsterAPI.Areas.HelpPage.ModelDescriptions;
-using CoffeeHipsterAPI.Areas.HelpPage.Models;
+using CoffeeHipster.API.Areas.HelpPage.ModelDescriptions;
+using CoffeeHipster.API.Areas.HelpPage.Models;
 
-namespace CoffeeHipsterAPI.Areas.HelpPage.Controllers
+namespace CoffeeHipster.API.Areas.HelpPage.Controllers
 {
     /// <summary>
     /// The controller that will handle requests for the help page.

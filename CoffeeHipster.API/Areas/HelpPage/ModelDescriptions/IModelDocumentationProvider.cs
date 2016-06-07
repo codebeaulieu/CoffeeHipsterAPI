@@ -1,7 +1,7 @@
 using System;
 using System.Reflection;
 
-namespace CoffeeHipsterAPI.Areas.HelpPage.ModelDescriptions
+namespace CoffeeHipster.API.Areas.HelpPage.ModelDescriptions
 {
     public interface IModelDocumentationProvider
     {
