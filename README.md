@@ -3,4 +3,7 @@ This repository represents the ASP.NET WebAPI backend to my iOS application, tha
 
 
 It's still in it's infancy but you can view the live application here:
+
 http://coffeehipster.azurewebsites.net/
+
+I'll workout a read-only login and password within the next few days.
