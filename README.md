@@ -6,4 +6,5 @@ It's still in it's infancy but you can view the live application here:
 
 http://coffeehipster.azurewebsites.net/
 
-I'll workout a read-only login and password within the next few days.
+login: guest@hipster.com
+pass: Abc123!
