@@ -1,7 +1,7 @@
 ﻿"use strict";
 
 angular.module('app').config(['$routeProvider', function ($routeProvider) {
-    console.log("route provider loads");
+ 
     var routes = [
         {
             url: '/dashboard',
@@ -26,6 +26,12 @@ angular.module('app').config(['$routeProvider', function ($routeProvider) {
             config: {
                 template: '<ch-messages></ch-messages>'
             }
+        }, 
+        {
+            url: '/login',
+            config: {
+                template: '<ch-login></ch-login>'
+            }
         }
     ];
 
@@ -35,6 +41,13 @@ angular.module('app').config(['$routeProvider', function ($routeProvider) {
     });
 
     $routeProvider.otherwise({ redirectTo: '/dashboard' });
+ 
+        
+ 
 
-
-}]);
+     
+}]).run(function ($rootScope, $location) {
+ 
+ 
+  
+});

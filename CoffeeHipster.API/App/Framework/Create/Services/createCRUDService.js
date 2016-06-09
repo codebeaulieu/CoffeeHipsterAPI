@@ -4,7 +4,7 @@ angular.module('chCreate').factory('createCRUDService',
     ['$timeout', '$http', '$log',
     function ($timeout, $http, $log) {
 
-        var get = function () { 
+        var get = function () {
             return $http({
                 method: 'GET',
                 datatype: 'json',

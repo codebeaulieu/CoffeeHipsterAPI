@@ -1,14 +1,15 @@
 ﻿"use strict";
 
 angular.module('chMenu').controller('chMenuController',
-    ['$scope', '$rootScope', '$timeout', '$localStorage',
-        function ($scope, $rootScope, $timeout, $localStorage) {
-            console.log("menu controller loads");
+    ['$scope', '$rootScope', '$timeout', '$localStorage', 'authService',
+        function ($scope, $rootScope, $timeout, $localStorage, authService) {
+            
             // local storage
             $scope.$storage = $localStorage;
             $scope.menuOpen = false;
             $scope.selectedMenuItem = $localStorage.selectedMenuItem || "dashboard";
- 
+            var self = this;
+            self.authenticated = authService.authenticated.isAuth;
 
             this.getActiveElement = function () {
                 return $scope.activeElement;
@@ -19,6 +20,7 @@ angular.module('chMenu').controller('chMenuController',
             };
 
             this.setRoute = function (route) {
+                $localStorage.selectedMenuItem = route;
                 $rootScope.$broadcast('ch-menu-item-selected-event',
                     { route: route });
             };

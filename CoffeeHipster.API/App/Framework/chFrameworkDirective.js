@@ -8,10 +8,9 @@ angular.module("chFramework").directive("chFramework", function () {
         },
         controller: "chFrameworkController",
         templateUrl: "App/Framework/chFrameworkTemplate.html",
-        link: function (scope, element, attrs) {
-
-            console.log("chDashboardDirective");
-
+        link: function (scope, el, attr) {
+            
+ 
         }
 
     };

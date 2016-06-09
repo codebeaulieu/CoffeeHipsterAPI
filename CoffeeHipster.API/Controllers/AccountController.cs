@@ -18,7 +18,6 @@ using CoffeeHipster.API.Providers;
 using CoffeeHipster.API.Results;
 using CoffeeHipster.Models;
 using CoffeeHipster.Data;
-using CoffeeHipster.API.Providers;
 
 namespace CoffeeHipster.API.ControllersB
 {

@@ -16,8 +16,8 @@ namespace CoffeeHipster.API
  
         protected override void HandleUnauthorizedRequest(AuthorizationContext filterContext)
         {
-           
-                filterContext.Result = new RedirectToRouteResult(new RouteValueDictionary(new { controller = "Home", action = "Login" }));
+                
+            filterContext.Result = new RedirectToRouteResult(new RouteValueDictionary(new { controller = "Home", action = "Login" }));
             
         }
     }

@@ -20,8 +20,6 @@ angular.module('chFramework').factory('frameworkService',
             });
         };
 
-        
-
         return {
             login: login
  

@@ -10,7 +10,7 @@ namespace CoffeeHipster.API.Controllers
     
     public class HomeController : Controller
     {
-        [AuthorizeOrRedirect]
+        
         public ActionResult Index()
         {
             ViewBag.Title = "Home Page";
@@ -18,11 +18,6 @@ namespace CoffeeHipster.API.Controllers
             return View();
         }
 
-        public ActionResult Login()
-        {
  
-
-            return View();
-        }
     }
 }

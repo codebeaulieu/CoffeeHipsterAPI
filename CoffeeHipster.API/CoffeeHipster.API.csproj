@@ -226,7 +226,10 @@
     <Content Include="App\appConfig.js" />
     <Content Include="App\appModule.js" />
     <Content Include="App\appRouteConfig.js" />
-    <Content Include="App\Framework\chLoginController.js" />
+    <Content Include="App\Framework\Login\chLoginController.js" />
+    <Content Include="App\Framework\Login\chLoginDirective.js" />
+    <Content Include="App\Framework\Login\chLoginModule.js" />
+    <Content Include="App\Framework\Login\chLoginTemplate.html" />
     <Content Include="App\Framework\Content\Services\contentCRUDService.js" />
     <Content Include="App\Framework\Create\Services\createCRUDService.js" />
     <Content Include="App\Framework\Dashboard\Services\dashboardCRUDService.js" />
@@ -263,6 +266,7 @@
     <Content Include="App\Framework\Content\chContentModule.js" />
     <Content Include="App\Framework\Content\chContentTemplate.html" />
     <Content Include="App\Framework\Messages\Services\messagesCRUDService.js" />
+    <Content Include="App\Framework\Services\authService.js" />
     <Content Include="App\Framework\Services\frameworkService.js" />
     <Content Include="Areas\HelpPage\HelpPage.css" />
     <Content Include="Content\angular-material.css" />
@@ -554,7 +558,6 @@
     <Content Include="Scripts\tinymce\skins\lightgray\fonts\tinymce-small.eot" />
     <Content Include="Scripts\tinymce\skins\lightgray\fonts\readme.md" />
     <Content Include="Scripts\tinymce\langs\readme.md" />
-    <Content Include="Views\Home\Login.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

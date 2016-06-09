@@ -22,8 +22,7 @@ angular.module("chCreate", ['ngMaterial', 'ngMessages']).controller("chCreateCon
                 Accepted: true
             };
 
-            self.handleSubmitButtonClicked = function () {
-
+            self.handleSubmitButtonClicked = function () { 
                 createCRUDService.post(self.coffee).then(function (obj) {
                     console.log("obj: ", obj);
                 });
@@ -34,10 +33,9 @@ angular.module("chCreate", ['ngMaterial', 'ngMessages']).controller("chCreateCon
             });
 
             var init = function () {
-    
-            };
 
 
+            }
             init();
         }
     ]);

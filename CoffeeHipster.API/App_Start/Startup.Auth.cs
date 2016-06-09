@@ -36,6 +36,7 @@ namespace CoffeeHipster.API
             PublicClientId = "self";
             OAuthOptions = new OAuthAuthorizationServerOptions
             {
+                 
                 TokenEndpointPath = new PathString("/Token"),
                 Provider = new ApplicationOAuthProvider(PublicClientId),
                 AuthorizeEndpointPath = new PathString("/api/Account/ExternalLogin"),
