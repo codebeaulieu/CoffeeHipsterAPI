@@ -42,6 +42,8 @@ namespace CoffeeHipster.Models
 
         public DbSet<Coffee> Coffees { get; set; }
         public DbSet<User> AppUsers { get; set; }
-        public DbSet<Admin> Admins { get; set; } 
+        public DbSet<Admin> Admins { get; set; }
+
+        public System.Data.Entity.DbSet<CoffeeHipster.Models.ImageUpload> ImageUploads { get; set; }
     }
 }

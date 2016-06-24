@@ -66,6 +66,7 @@
     <Compile Include="Admin.cs" />
     <Compile Include="Coffee.cs" />
     <Compile Include="IdentityModels.cs" />
+    <Compile Include="ImageUpload.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="User.cs" />
   </ItemGroup>

@@ -26,7 +26,7 @@ namespace CoffeeHipster.Models
         public decimal OilAmount { get; set; }
         public bool FairTrade { get; set; }
         public string History { get; set; } 
-        public string ImageBagURL { get; set; } 
+        public string ImageBagURL { get; set; }  
         public string ImageBeanURL { get; set; }
         public string CountryOfOrigin { get; set; }
         public string DateOfOrigin { get; set; }

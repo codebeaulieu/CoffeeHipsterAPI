@@ -62,6 +62,20 @@ namespace CoffeeHipster.Data
             private set { _adminRepository = value; }
         }
 
+        private IRepository<ImageUpload> _imageRepository;
+        public IRepository<ImageUpload> ImageRepository
+        {
+            get
+            {
+                if (_imageRepository == null)
+                {
+                    _imageRepository = new Repository<ImageUpload>(_context);
+                }
+                return _imageRepository;
+            }
+            private set { _imageRepository = value; }
+        }
+
         public void Dispose()
         {
 
